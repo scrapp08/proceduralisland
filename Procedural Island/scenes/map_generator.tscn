@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctpt2lr2p8lcg"]
+
+[ext_resource type="Script" path="res://scripts/map_display.gd" id="1_wytrp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m2kw1"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_wytrp")
+
+[node name="Plane" type="CSGMesh3D" parent="."]
+mesh = SubResource("PlaneMesh_m2kw1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
